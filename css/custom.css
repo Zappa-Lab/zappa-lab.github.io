@@ -81,7 +81,12 @@ header .header-content .header-content-inner p {
     	font-size: 100px;
 		}
 	header .header-content .header-content-inner h2 {
-    	line-height: 50%;
+		padding-top: 5%;
+    	line-height: 70%;
+		}	
+	header .header-content .header-content-inner h4 {
+    	line-height: 70%;
+		font-variant:small-caps;
 		}	
 
     header .header-content .header-content-inner p {
