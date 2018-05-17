@@ -28,7 +28,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url('../images/header.jpg');
+    background-image: url('header.JPG');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -80,6 +80,14 @@ header .header-content .header-content-inner p {
 	header .header-content .header-content-inner h1 {
     	font-size: 100px;
 		}
+	header .header-content .header-content-inner h2 {
+		padding-top: 5%;
+    	line-height: 70%;
+		}	
+	header .header-content .header-content-inner h4 {
+    	line-height: 70%;
+		font-variant:small-caps;
+		}	
 
     header .header-content .header-content-inner p {
         margin-right: auto;
