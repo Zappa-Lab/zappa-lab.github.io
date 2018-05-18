@@ -83,11 +83,11 @@ header .header-content .header-content-inner p {
 	header .header-content .header-content-inner h2 {
 		padding-top: 5%;
     	line-height: 70%;
-		}	
+		}
 	header .header-content .header-content-inner h4 {
     	line-height: 70%;
 		font-variant:small-caps;
-		}	
+		}
 
     header .header-content .header-content-inner p {
         margin-right: auto;
@@ -103,8 +103,8 @@ header .header-content .header-content-inner p {
 }
 
 .intro {
-	color: #fff;
-    background-color: yellowgreen;
+	color: #000000;
+    background-color: GhostWhite;
     padding: 70px 0;
     text-align: center;
 }
@@ -465,5 +465,18 @@ left:-15px;
 			border-radius: 9999px;
 			display:block;
 			width:150px;
+			padding-bottom:10px;
+}
+
+.highlight-pic {
+			overflow: hidden;
+      position:absolute;
+			left:1%;
+
+}
+.highlight-pic img {
+
+			display:block;
+			width:399px;
 			padding-bottom:10px;
 }
