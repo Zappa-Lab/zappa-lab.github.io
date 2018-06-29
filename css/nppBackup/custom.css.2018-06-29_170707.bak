@@ -466,11 +466,6 @@ width: 80%;
 
 }
 
-.bio-section {
-	position: relative;
-	right: 8px;
-}
-
 .highlight-pic {
 			overflow: hidden;
       position:absolute;

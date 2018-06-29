@@ -452,6 +452,7 @@ width: 80%;
 	text-align:center;
 }
 
+
 .team-avatar {
     position:relative;
 	float: left;
@@ -464,11 +465,6 @@ width: 80%;
 			width:150px;
 			padding-bottom:10px;
 
-}
-
-.bio-section {
-	position: relative;
-	right: 8px;
 }
 
 .highlight-pic {
@@ -484,7 +480,7 @@ width: 80%;
 			padding-bottom:10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 	.team-avatar {
 		width: 100%;
 	}

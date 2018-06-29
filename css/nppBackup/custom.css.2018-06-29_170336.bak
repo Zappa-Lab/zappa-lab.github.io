@@ -441,6 +441,7 @@ img::-moz-selection {
 
 .team-bio h4{
   position:relative;
+
   padding-bottom:65px;
 width: 80%;
 }
@@ -450,7 +451,9 @@ width: 80%;
 	width: 80%;
 	bottom:53px;
 	text-align:center;
+
 }
+
 
 .team-avatar {
     position:relative;
@@ -466,11 +469,6 @@ width: 80%;
 
 }
 
-.bio-section {
-	position: relative;
-	right: 8px;
-}
-
 .highlight-pic {
 			overflow: hidden;
       position:absolute;
@@ -484,7 +482,7 @@ width: 80%;
 			padding-bottom:10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 	.team-avatar {
 		width: 100%;
 	}

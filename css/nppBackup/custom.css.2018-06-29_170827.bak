@@ -468,7 +468,7 @@ width: 80%;
 
 .bio-section {
 	position: relative;
-	right: 8px;
+	right: 15px;
 }
 
 .highlight-pic {
