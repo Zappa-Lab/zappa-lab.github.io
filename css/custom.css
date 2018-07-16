@@ -22,6 +22,20 @@ p {
     line-height: 1.5;
 }
 
+#siteNav a {
+	color: #333;
+	background-color: white;
+}
+
+#siteNav {
+	background-color: white;
+}
+
+.header-content-inner {
+	color: #333;
+	
+}
+
 header {
     position: relative;
     width: 100%;
