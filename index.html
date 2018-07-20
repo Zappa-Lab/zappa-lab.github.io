@@ -29,6 +29,14 @@ Although you can use them, for a more unique website, replace these images with 
     <!-- Custom Fonts from Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+  <style type="text/css">
+      a.fancybox img {
+          border: none;
+          box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+      }
+  </style>
+
 </head>
 
 <body>
@@ -163,7 +171,10 @@ Although you can use them, for a more unique website, replace these images with 
             <p>Bridging the scientific and indigenous communities: Sea Ice Change in Arctic Alaska. See the website for this project <a href="http://ikaagviksikukun.org " target="_blank">here </a>.</p>
 
               <br><h4>Polynyas and the Global Overturning Circulation</h4>
-              <p>In 2017 aboard the R/V Araon, we deployed a mooring with instruments to measure current velocities, temperature, salinity, and other water properties in Terra Nova Bay, Ross Sea to understand the formation and transport of a vital componant of global ocean circulation known as high salinity shelf water. We successfully retrieved this mooring in 2018 and are analyzing the data.</p>
+              <p>In 2017 aboard the R/V Araon, we deployed a mooring with instruments to measure current velocities, temperature, salinity, and other water properties in Terra Nova Bay, Ross Sea to understand the formation and transport of High Salinity Shelf Water (HSSW). This water mass originates in polynyas, seasonal openings in the sea ice that act as "windows" into an otherwise ice-covered polar ocean. Here, sea ice is formed and blown away by strong winds, making room for more ice to form in what is called a "sea ice factory." When ice forms, it excludes brine, leaving the surface waters of the polynya highly saline. This HSSW is very dense, causing it to sink and become the primary constituent of a larger water mass known as Antarctic Bottom Water, a vital componant of the climate-regulating global ocean circulation. We successfully retrieved this mooring in 2018 and are currently working to analyze the data.</p>
+
+<img class="fancybox" src="penguin.jpg" alt="HTML5 Icon" style="width:30%;height:30%;" title="Penguin spotting">
+<img class="fancybox" src="araondeck.jpg" alt="HTML5 Icon" style="width:30%;height:30%;" title="Carson Witte carries a heavy instrument inside following a mooring recovery">
 
               <br><h4>The Sea Surface Microlayer Universe </h4>
               <p>A multi-disciplinary and multi-institutional effort to increase our understanding of the significance and role of the air-sea interface (sea surface microlayer, SML) as the boundary layer controlling atmosphere-ocean interactions. The first research cruise occured in 2016 on the R/V Falkor in the Timor Sea. The next research cruise is scheduled for the end of 2019.</p>
@@ -375,7 +386,29 @@ Farrar, J.T., C.J. Zappa, R.A. Weller, and A.T. Jessup (2007), Sea surface tempe
     <!-- Custom Javascript -->
     <script src="js/custom.js"></script>
 
-
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <script type="text/javascript">
+        $(function($){
+            var addToAll = false;
+            var gallery = true;
+            var titlePosition = 'inside';
+            $(addToAll ? 'img' : 'img.fancybox').each(function(){
+                var $this = $(this);
+                var title = $this.attr('title');
+                var src = $this.attr('data-big') || $this.attr('src');
+                var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                $this.wrap(a);
+            });
+            if (gallery)
+                $('a.fancybox').attr('rel', 'fancyboxgallery');
+            $('a.fancybox').fancybox({
+                titlePosition: titlePosition
+            });
+        });
+        $.noConflict();
+    </script>
 
 </body>
 
